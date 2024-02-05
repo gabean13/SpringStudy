@@ -31,11 +31,11 @@ public class RequestParamServlet extends HttpServlet {
         System.out.println("[단일 파라미터 조회] - end");
         System.out.println();
 
-        System.out.println("[같은 이름의 파라미터 조회]");
-        String[] usernames = request.getParameterValues("username");
-        for (String name : usernames) {
-            System.out.println("name : " + name);
-        }
+//        System.out.println("[같은 이름의 파라미터 조회]");
+//        String[] usernames = request.getParameterValues("username");
+//        for (String name : usernames) {
+//            System.out.println("name : " + name);
+//        }
 
         response.getWriter().write("ok");
     }
