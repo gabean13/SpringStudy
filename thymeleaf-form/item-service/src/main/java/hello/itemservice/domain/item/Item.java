@@ -2,6 +2,8 @@ package hello.itemservice.domain.item;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class Item {
 
@@ -9,6 +11,10 @@ public class Item {
     private String itemName;
     private Integer price;
     private Integer quantity;
+    private boolean open;
+    private List<String> regions;
+    private ItemType itemType;
+    private String deliveryCode;    //배송방법
 
     public Item() {
     }
@@ -18,4 +24,5 @@ public class Item {
         this.price = price;
         this.quantity = quantity;
     }
+
 }
